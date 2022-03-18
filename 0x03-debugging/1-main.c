@@ -1,5 +1,12 @@
 #include <stdio.h>
 /**
+*infinite loops
+*
+*
+* code like a devops
+*
+*
+*
 * main - causes an infinite loop
 * Return: 0
 */
