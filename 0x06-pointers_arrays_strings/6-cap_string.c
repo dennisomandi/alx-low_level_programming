@@ -34,3 +34,38 @@ if (i > 0)
 str[0] = cap_char(str[0]);
 return (str);
 }
+/**
+* is_sep - checks whether a given character is a separator
+* @c: character to be checked
+*
+* Description:
+* Separators are: space, tabulation, new line,
+* ,, ;, ., !, ?, ", (, ), {, and }
+*
+* Return: 1 if c is a separator. 0 otherwise
+*/
+int is_sep(char c)
+{
+char seps[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')',
+'{', '}'};
+int n = sizeof(seps) / sizeof(seps[0]);
+int i;
+for (i = 0; i < n; i++)
+{
+if (c == seps[i])
+return (1);
+}
+return (0);
+}
+/**
+* cap_char - gets the uppercase value of a character
+* @c: character whose uppercase value to find
+*
+* Return: the uppercase vallue of c if c is in lowercase. Otherwise c
+*/
+char cap_char(char c)
+{
+if (c >= 'a' && c <= 'z')
+return (c - 32);
+return (c);
+}
