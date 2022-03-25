@@ -1,17 +1,25 @@
-#include "main.h"
+# include "main.h"
 /**
- * *_strncpy - find the length of a string
- * @dest: pointer to the string
- * @src: pointer
- * @n: int
- * Return: destination
+* _strcmp - compares 2 strings
+* @s1: first string
+* @s2: second string
+*
+* Description: works exactly like strcmp from <string.h>
+*
+* Return: -ve integer, 0 or +ve integer if s1 is less than,
+* equal to or greater than s2
 */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-int i;
-for (i = 0; i < n && src[i] != '\0'; i++)
-dest[i] = src[i];
-for ( ; i < n; i++)
-dest[i] = '\0';
-return (dest);
+int diff = 0;
+while (diff == 0)
+{
+diff = *s1 - *s2;
+/* break if one of the strings is empty */
+if (*s1 == '\0' || *s2 == '\0')
+break;
+s1++;
+s2++;
+}
+return (diff);
 }
