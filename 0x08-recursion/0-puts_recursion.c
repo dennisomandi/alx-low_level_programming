@@ -1,28 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _puts_recursion - function like puts();
+ * @s: input
+ * Return: Always 0 (Success)
  */
-int main(void)
+void _puts_recursion(char *s)
 {
-int r;
-r = is_prime_number(1);
-printf("%d\n", r);
-r = is_prime_number(1024);
-printf("%d\n", r);
-r = is_prime_number(16);
-printf("%d\n", r);
-r = is_prime_number(17);
-printf("%d\n", r);
-r = is_prime_number(25);
-printf("%d\n", r);
-r = is_prime_number(-1);
-printf("%d\n", r);
-r = is_prime_number(113);
-printf("%d\n", r);
-r = is_prime_number(7919);
-printf("%d\n", r);
-return (0);
+if (*s == '\0')
+_putchar('\n');
+else
+{
+_putchar(*s);
+_puts_recursion(s + 1);
+}
 }
