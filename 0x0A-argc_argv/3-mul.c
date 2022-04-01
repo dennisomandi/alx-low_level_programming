@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ ** main - multiplies two numbers
+ ** @argc: arg count
+ ** @argv: args passed as an array of strs
+ ** Return: 1 if error, otherwise 0
+ **/
 int main(int argc, char *argv[])
 {
 (void) argc;
