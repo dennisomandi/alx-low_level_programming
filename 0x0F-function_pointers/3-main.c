@@ -20,7 +20,7 @@ printf("Error\n");
 exit(99);
 }
 p = get_op_func(argv[2]);
-if (!p)		/* if falsy */
+if (!p)
 {
 printf("Error\n");
 exit(99);
