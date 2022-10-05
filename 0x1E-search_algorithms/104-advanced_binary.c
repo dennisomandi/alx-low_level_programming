@@ -1,6 +1,6 @@
 /*
  * File: 104-advanced_binary.c
- * Auth: Brennan D Baraban
+ * Auth: Dennis Omandi
  */
 
 #include "search_algos.h"

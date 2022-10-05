@@ -1,6 +1,6 @@
 /*
  * File: 1-binary.c
- * Auth: Brennan D Baraban
+ * Auth: Dennis Omandi
  */
 
 #include "search_algos.h"
